@@ -23,16 +23,16 @@ jobs:
           - 19
         os:
           - macOS-latest
-          - ubuntu-latest
-          - windows-latest
+          - ubuntu-22.04
+          - windows-2022
         exclude:
           - arch: x86
             os: macOS-latest
           - arch: x86
-            os: ubuntu-latest
+            os: ubuntu-22.04
           - arch: x86
             node: 18
-            os: windows-latest
+            os: windows-2022
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
